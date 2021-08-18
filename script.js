@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
       data.sort(function (a, b) {
         return b.hoursInSpace - a.hoursInSpace;
       });
-      for (const index of data) {
+      for (let index = 0; index < data.length; data++) {
         container.innerHTML += `
           <div class="astronaut">
           <div class="bio">
